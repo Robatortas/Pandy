@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: -13px 0px 0px -10px;
+    display: inline-flex;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    color: aliceblue;
+    font-size: 4.2vw;
+    margin: 100px 0px 200px 50px;
+    /* text-shadow: 0px 0px 30px black; */
+    
+}
+
+@keyframes headerImg {
+    from { filter: brightness(85%) blur(0px); }
+    to { filter: brightness(60%) blur(3px); }
+}
+
+#header-image {
+    position: sticky;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* animation-name: headerImg;
+    animation-duration: 1s;
+    animation-fill-mode: both; */
+    filter: brightness(60%) blur(3px);
+}
+
+.text-container {
+    display: flex;
+    font-size: 20px;
+    max-width: 60vw;
+    justify-content: center;
+    text-align: justify;
+    margin: 40px auto;
+}
+
+#dock {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: black;
+    outline-color: gray;
+    padding: 10px 0px 10px 0px;
+    background-color: gainsboro;
+}
+
+.dockChild {
+    padding: 0px 10px 0px 10px;
+    background-color: gainsboro;
+}
