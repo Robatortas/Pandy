@@ -1,10 +1,13 @@
+
+/* I honestly dont intend nor want to  */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: azure;
+    /* background-color: ; */
 }
 
 .header {
-    width: 100vw;
+    width: 99.2vw;
     height: 100vh;
     overflow: hidden;
     margin: -13px 0px 0px -10px;
@@ -29,8 +32,8 @@ body {
 #header-image {
     position: sticky;
     overflow: auto;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 180%;
     object-fit: cover;
     /* animation-name: headerImg;
     animation-duration: 1s;
@@ -42,9 +45,8 @@ body {
     display: flex;
     font-size: 20px;
     max-width: 60vw;
-    justify-content: center;
     text-align: justify;
-    margin: 40px auto;
+    margin: 100px auto;
 }
 
 #dock {
@@ -59,5 +61,19 @@ body {
 
 .dockChild {
     padding: 0px 10px 0px 10px;
-    background-color: gainsboro;
+    background-color: rgb(220, 220, 220);
+}
+
+button {
+    border: none;
+    padding: 10px;
+
+}
+button:active {
+    color: brown;
+    background-color: rgb(200, 200, 200);
+}
+
+.text {
+    margin-right: 10%;
 }
