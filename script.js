@@ -12,7 +12,7 @@ document.addEventListener("scroll", (event) => {
     if(document.getElementById("dock").getBoundingClientRect().y+document.querySelector(".header").getBoundingClientRect().height/2 <= scrollY) {
         // document.getElementById("dock").style.objectPosition = "0px " + scrollY*10 + "px";
         // document.getElementById("dock").getBoundingClientRect(). y = scrollY;
-        document.getElementById("dock").style.position = "fixed";
+        // document.getElementById("dock").style.position = "fixed";
         console.log("hey");
     }
 });

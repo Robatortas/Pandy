@@ -12,14 +12,16 @@ body {
     overflow: hidden;
     margin: -13px 0px 0px -10px;
     display: inline-flex;
+    justify-content: center;
 }
 
 .title {
     position: absolute;
-    display: flex;
     color: aliceblue;
-    font-size: 4.2vw;
-    /* margin: 100px 0px 200px 50px; */
+    font-size: 3.2vw;
+    margin: 10vw auto auto auto;
+    text-align: center;
+    justify-content: right;
     /* text-shadow: 0px 0px 30px black; */
     
 }
@@ -30,20 +32,17 @@ body {
 }
 
 #header-image {
-    position: sticky;
+    position: relative;
+    background-image: url(res/red_fox.jpeg);
     overflow: auto;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0vw 0px;
-    /* animation-name: headerImg;
-    animation-duration: 1s;
-    animation-fill-mode: both; */
     filter: brightness(60%) blur(0px);
 }
 
 .text-container {
-    display: flex;
     font-size: 25px;
     max-width: 100vw;
     text-align: left;
@@ -54,21 +53,23 @@ body {
     font-size: 80px;
 }
 .text-container img {
-    width: 30%; 
-    height: 30%;
+    width: 30vw; 
+    height: auto;
     border-radius: 100%;
     margin: auto 0px;
     transition: all;
 }
 
 #dock {
-    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 1;
     display: flex;
     justify-content: center;
     color: black;
-    outline-color: gray;
     padding: 10px 0px 10px 0px;
-    margin: 0px 0px 50px 0px;
     background-color: gainsboro;
 }
 
@@ -80,11 +81,16 @@ body {
 button {
     border: none;
     padding: 10px;
-
+    transform: scale(1, 1);
+    transition: all 0.2s;
 }
 button:active {
     color: brown;
     background-color: rgb(200, 200, 200);
+}
+button:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 0.2s;
 }
 
 .text {
