@@ -61,6 +61,7 @@ body {
 }
 
 #dock {
+    opacity: 0;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -70,12 +71,12 @@ body {
     justify-content: center;
     color: black;
     padding: 10px 0px 10px 0px;
-    background-color: gainsboro;
+    background-color: rgba(180, 180, 180, 0.7);
+    backdrop-filter: blur(10px);
 }
 
 .dockChild {
     padding: 0px 10px 0px 10px;
-    background-color: rgb(220, 220, 220);
 }
 
 button {

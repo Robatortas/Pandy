@@ -8,11 +8,13 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <table id="dock">
-        <td class="dockChild"><button onclick="location.href='index.html'">Home</button></td>
-        <td class="dockChild"><button onclick="location.href='mission.html'">Our Mission</button></td>
-        <td class="dockChild"><button onclick="location.href='aboutus.html'">About Us</button></td>
-    </table>
+    <div id="dock">
+        <table>
+            <td class="dockChild"><button onclick="location.href='index.html'">Home</button></td>
+            <td class="dockChild"><button onclick="location.href='mission.html'">Our Mission</button></td>
+            <td class="dockChild"><button onclick="location.href='aboutus.html'">About Us</button></td>
+        </table>
+    </div>
     <header>
         <div class="header">
             <img id="header-image" src="res/red_fox.jpeg" alt="">
@@ -31,7 +33,7 @@
 
     </div>
 
-    <article">
+    <article>
         <div class="text-container" style="display: flex;">
                 <div class="text" style="float: left; width: 50%;">
                     <h1>Why is this important?</h1>
